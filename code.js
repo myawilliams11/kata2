@@ -28,3 +28,30 @@ var div= document.createElement("div")
 // gives the quotes and brackets
 div.textContent= JSON.stringify(array)
 document.body.appendChild(div)
+
+
+// var array= lotrCitiesArray.join(",")
+// var selectArray = lotrCitiesArray.slice(0, 1, 2, 3, 4);
+
+var lotrCitiesArray = ["Mordor","Gondor","Rohan","Beleriand","Mirkwood","Dead Marshes","Rhun","Harad"];
+
+for (var positionInArray = 0; positionInArray < lotrCitiesArray.length; positionInArray++) {
+    console.log(lotrCitiesArray[positionInArray]);
+
+    // var div = document.createElement("div")
+    // // document.getElementById("div").innerHTML = selectArray;
+    // // gives the quotes and brackets
+    // div.textContent = JSON.stringify(lotrCitiesArray)
+    // document.body.appendChild(div)
+}
+
+
+
+
+
+// for (var selectArray[j] j=0; j<6; j++) {
+//     System.out.println(strArray[j]);
+
+
+// var selectArray = names.slice(0,1,2,3,4);
+//     document.getElementById("div").innerHTML = selectArray;
