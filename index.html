@@ -1,13 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Katas2</title>
 </head>
+
 <body>
-        <script src="code.js"></script>
-    
+
+    <script>
+        const numbers = [1, 2, 3, 4, 5];
+        numbers.reverse(' ');
+        console.log(numbers);
+        document.write(numbers);
+    </script>
+    </br>
+
+    <script>
+        const bob = "bob likes dogs";
+        const dogs = bob.split(" ").reverse().join(" ");
+        document.write(dogs);
+    </script>
+    </br>
+
+    <script>
+        const minArray = Math.min(1, 2, 3, 4, 5);
+        document.write(minArray);
+    </script>
+    </br>
+
+    <script>
+        const maxArray = Math.max(1, 2, 3, 4, 5);
+        document.write(maxArray);
+    </script>
+    </br>
+
+    <script>
+        const x = 17;
+        const y = 4;
+        const z = x % y;
+        document.write(z);
+    </script>
+    </br>
+
+    <script>
+        const pets = ["dog", "cat", "mouse", "cat", "dog", "bird", "dog"]
+        const favPets = pets.slice(1, 4);
+
+        document.write(favPets);
+    </script>
+    </br>
+
+
+    <script>
+
+        let nums = "1 2 7 9 1 2 5 3 4 4 5 6 3 5 7".split(' ');
+        let result = '';
+        const highestNum = Math.max(...nums)
+        for (i = 1; i <= highestNum; i++) {
+            let temp = 0;
+            for (j = 0; j < nums.length; j++) {
+                if (Number(nums[j]) === i) {
+                    temp++
+                }
+            }
+            if (temp >= 1) {
+                result += (`${i}(${temp}) `)
+            }
+        }
+        console.log(result)
+
+    </script>
+    </br>
+
+
+    <script>
+        const a = 1
+        const b = 7;
+        const c = 3;
+        const d = 14;
+        const problem = a + b + c - d;
+
+        document.write(problem);
+
+    </script>
+
+
 </body>
+
 </html>
