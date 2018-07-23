@@ -11,52 +11,82 @@
 <body>
 
     <script>
-        const numbers = [1, 2, 3, 4, 5];
-        numbers.reverse(' ');
-        console.log(numbers);
-        document.write(numbers);
+
+
+        function reverseString(str) {
+            const splitString = str.split("");
+            const reverseArray = splitString.reverse();
+            const joinArray = reverseArray.join("");
+            return joinArray;
+        }
+        console.log(reverseString("hello") === "olleh");
+        console.log(reverseString("hey")=== "hey");
+        document.write(reverseString("hello"));
+        document.write(reverseString("hey"));
+
     </script>
     </br>
 
     <script>
-        const bob = "bob likes dogs";
-        const dogs = bob.split(" ").reverse().join(" ");
-        document.write(dogs);
+    function sentence(str){    
+        const bob = str.split(" ");
+        const dogs = bob.reverse().join(" ");
+    return dogs;
+    }
+    console.log(sentence("bob likes dogs") === "dogs likes bob");
+    console.log(sentence ("hello mya") === "mya hello");
+    document.write(sentence("bob likes dogs"));
     </script>
     </br>
 
     <script>
+        function three(){
         const minArray = Math.min(1, 2, 3, 4, 5);
-        document.write(minArray);
+        return minArray;
+        }
+        console.log(three()=== 1);
+        document.write(three());
     </script>
     </br>
 
     <script>
+        function four(){
         const maxArray = Math.max(1, 2, 3, 4, 5);
-        document.write(maxArray);
+        return maxArray;
+        }
+        console.log(four()=== 7);
+        document.write(four());
+
     </script>
     </br>
 
     <script>
+        function five(){
         const x = 17;
         const y = 4;
         const z = x % y;
-        document.write(z);
+        return z;
+        }
+        console.log(five("x & y = z", {x: 16, y: 3 }) === 2);
+        document.write(five());
     </script>
     </br>
 
     <script>
-        const pets = ["dog", "cat", "mouse", "cat", "dog", "bird", "dog"]
+        function six(str){
+        const pets = str.split(",");
         const favPets = pets.slice(1, 4);
-
-        document.write(favPets);
+        return favPets;
+}
+    console.log(six("dog, cat, mouse, cat, dog, bird, dog") === "cat");
+        document.write(six("dog, cat, mouse, cat, dog, bird, dog"));
     </script>
     </br>
 
 
     <script>
-
-        let nums = "1 2 7 9 1 2 5 3 4 4 5 6 3 5 7".split(' ');
+function seven(str){
+        let nums = str.split(' ');
         let result = '';
         const highestNum = Math.max(...nums)
         for (i = 1; i <= highestNum; i++) {
@@ -70,22 +100,39 @@
                 result += (`${i}(${temp}) `)
             }
         }
-        console.log(result)
+        return result;
+}
+        console.assert(seven("1 4 6 7 4 5 8 0"));
+        console.log(seven("1 3 4 5 6 7 7 7 7") === 2);
+        document.write(seven("1 2 7 9 1 2 5 3 4 4 5 6 3 5 7"));
 
     </script>
     </br>
 
 
     <script>
+        function eight(){
         const a = 1
         const b = 7;
         const c = 3;
         const d = 14;
         const problem = a + b + c - d;
 
-        document.write(problem);
+        return problem;
+        }
+        console.assert(eight("a + b + c - d", {a: 1, b: 7, c: 3, d: 14}) === -3);
+        console.log(eight("a + b + c - d", {a: 1, b: 2, c: 3, d: 4}) === 2);
+
+
+        document.write(eight());
+        
 
     </script>
+
+    </br>
+
+
+
 
 
 </body>
