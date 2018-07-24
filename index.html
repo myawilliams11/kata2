@@ -40,35 +40,38 @@
     </br>
 
     <script>
-        function three(){
-        const minArray = Math.min(1, 2, 3, 4, 5);
+        function three(arr){
+            
+        const minArray = Math.min(...arr);
         return minArray;
         }
-        console.log(three()=== 1);
-        document.write(three());
+        console.log('expecting true', three([4,3,2,2,6])===2);
+        document.write(three([1,2,3,4,5,6]) === 11);
     </script>
     </br>
 
     <script>
-        function four(){
-        const maxArray = Math.max(1, 2, 3, 4, 5);
+        function four(arr){
+        const maxArray = Math.max(...arr);
         return maxArray;
         }
-        console.log(four()=== 7);
-        document.write(four());
+        console.log('expecting false', four([3,5,6,8,7,9])=== 7);
+        document.write(four([1,2,3,4,5]) === 5);
 
     </script>
     </br>
 
     <script>
-        function five(){
-        const x = 17;
-        const y = 4;
+        function five(x,y){
+        // const x = ;
+        // const y = ("");
         const z = x % y;
         return z;
         }
-        console.log(five("x & y = z", {x: 16, y: 3 }) === 2);
-        document.write(five());
+        console.log(five(16,2));
+        document.write(five(3,18));
+
+        // document.write(five());
     </script>
     </br>
 
